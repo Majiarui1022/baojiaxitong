@@ -1,0 +1,29 @@
+@import "../../../styles/public.scss";
+
+.DemandHeader{
+    @include wh;
+    padding:10px 24px;
+    box-sizing: border-box;
+    .Demand-left-tab-list{
+        ul{
+            li{
+                margin-right: 10px;
+                a{ 
+                    border-radius: 15px;
+                    padding: 8px 12px;
+                    display: block;
+                    background: rgba(235, 237, 243, 1);
+                    span{
+                        @include txts(14px,rgba(153, 153, 153, 1),14px);
+                    }
+                    &.active{
+                        background: rgba(31, 95, 225, 1);
+                        span{
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

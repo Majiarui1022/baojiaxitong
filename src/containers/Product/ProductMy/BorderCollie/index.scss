@@ -1,0 +1,77 @@
+@import "../../../../styles/public.scss";
+
+
+
+.BorderCollie-fat-fox{
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    padding: 0 14px;
+    box-sizing: border-box;
+    .form-list-cont{
+        @include wh(100%,100%,hidden);
+        background: #ffffff;
+        position: relative;
+        .DemandCreate-tit-fax{
+            @include wh(100%,50px);
+            border-bottom:1px solid rgba(229, 229, 229, 1);
+            box-sizing: border-box;
+            .tit-name{
+                @include txts(20px,rgba(51,51,51,1),48px);
+            }
+            .link-name{
+                margin-top: 19px;
+                margin-left: 9px;
+                cursor: pointer;
+                span{
+                    @include txts(14px,rgba(32,95,224,1),14px);
+                    text-decoration:underline;
+                }
+                img{
+                    width: 16px;
+                    height: 16px;
+                    margin-left: 5px;
+                }
+            }
+        }
+        .DemandCreeate-cont-list{
+            padding-top: 30px;
+            padding-left: 26px;
+            width: 100%;
+            height: calc(100% - 50px);
+            box-sizing: border-box;
+            .tab{
+                width: 100%;
+                height: 100%;
+                overflow-x: hidden;
+                overflow-y: auto;
+                .th,.tr{
+                    display: flex;
+                    align-items: center;
+                    .td{
+                        margin: 0 12px;
+                    }
+                    .num{
+                        @include wh(26px,36px);
+                        line-height: 36px;
+                    }
+                    .content{
+                        @include wh(400px,36px);
+                    }
+                    .type{
+                        @include wh(140px,36px);
+                    }
+                    .close{
+                        @include wh(32px,32px);
+                    }
+                }
+            }
+            .close-fat-but{
+                button{
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+}

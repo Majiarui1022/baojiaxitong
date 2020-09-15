@@ -1,0 +1,132 @@
+@import '../../styles/public.scss';
+
+
+.fox{
+ .ant-form{
+    overflow: hidden;
+    .ant-form-item{
+        display: flex;
+        height: 36px;
+        align-items: center;
+        margin-bottom: 20px;
+        float: left;
+        margin-right: 20px;
+        .ant-form-item-label{
+            flex:initial;
+            width: 80px;
+            height: 36px;
+            @include txts(14px,rgba(38,38,38,1),36px);
+            & > label{
+                height: 36px;
+                @include txts(14px,rgba(38,38,38,1),36px);
+                display: block;
+            }
+        }
+        .ant-form-item-control{
+            @include wh(300px,36px);
+            border-radius:2px;
+            max-width: 300px;
+            .ant-form-item-control-input{
+                height: 36px;
+                font-size: 36px;
+                min-height: 36px;
+            }
+            .ant-form-item-explain{
+                height: 20px;
+                line-height: 20px;
+                min-height: 20px;
+            }
+            .ant-select{
+                display: block;
+                .ant-select-selector{
+                    height: 36px;
+                    padding: 0 8px;
+                    .ant-select-selection-placeholder,.ant-select-selection-item{
+                        line-height: 36px;
+                        font-size: 14px;
+                    }
+                }
+                .ant-select-clear,.ant-select-arrow{
+                    font-size: 14px;
+                }
+                .ant-select-arrow{
+                    @include wh(17px,10px);
+                    top: 50%;
+                    right: 8px;
+                    margin-top: -5px;
+                }
+                .ant-select-clear{
+                    @include wh(16px,16px);
+                    top: 50%;
+                    right: 8px;
+                    margin-top: -8px;
+                }
+            }
+            input{
+                height: 36px;
+                font-size: 14px;
+                display: block;
+            }
+            button{
+                width: auto !important;
+                @include whb(auto,36px,rgba(70,98,240,1));
+                border-radius:2px;
+            }
+        }
+
+        &:nth-last-child(2){
+            width: 1180px;
+            height: 120px;
+            .ant-form-item-control{
+                @include wh(1100px,100px);
+                max-width: 1100px;
+                div{
+                    @include wh;
+                    min-height: 100%;
+                }
+                textarea{
+                    width: 1100px;
+                    height: 100px;
+                    padding: 10px 8px;
+                    @include txts(14px,rgba(38,38,38,1),18px);
+                }
+                
+            }
+        }
+        &:last-child{
+            width: 100%;
+            .ant-form-item-control{
+                width: 100%;
+                max-width: 100%;
+                .ant-form-item-control-input-content{
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                button{
+                    margin: 0 10px;
+                    &:last-child{
+                        margin-right: 50px;
+                    }
+                }
+            }
+        }
+    }
+ }
+ 
+}
+.noprofat{
+    .ant-form-item{
+        justify-content: space-between;
+    }
+    .ant-form-item-control{
+         min-width: 90%;
+         margin-bottom: 10px;
+         
+     }
+     .ant-col-20{
+        flex: 0 0 8.33333333%;
+     }
+     button{
+         margin: 0 20px;
+     }
+ }

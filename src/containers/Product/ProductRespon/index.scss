@@ -1,0 +1,12 @@
+@import "../../../styles/public.scss";
+
+.ProductRespon-box-pad{
+    width:100%;
+    height: calc(100% - 50px);
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    .ProductRespon-tab-list-box{
+        @include wh(100%,100%,auto);
+    }
+}

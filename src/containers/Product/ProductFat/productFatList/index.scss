@@ -1,0 +1,12 @@
+@import "../../../../styles/public.scss";
+
+.ProductFat-box-pad{
+    width:100%;
+    height: calc(100% - 50px);
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+    .ProductFat-tab-list-box{
+        @include wh(100%,100%,auto);
+    }
+}

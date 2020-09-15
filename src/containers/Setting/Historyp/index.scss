@@ -1,0 +1,163 @@
+@import "../../../styles/public.scss";
+
+
+.pro-falt-fox{
+    width: 100%;
+    height: calc(100% - 50px);
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.Historyp-My-Detail-fax{
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    padding: 0 14px;
+    box-sizing: border-box;
+.form-list-cont{
+    @include wh(100%,100%,auto);
+    background: #ffffff;
+    .DemandCreate-tit-fax{
+        @include wh(100%,50px);
+        border-bottom:1px solid rgba(229, 229, 229, 1);
+        box-sizing: border-box;
+        .tit-name{
+            @include txts(20px,rgba(51,51,51,1),48px);
+        }
+        .link-name{
+            margin-top: 19px;
+            margin-left: 9px;
+            cursor: pointer;
+            span{
+                @include txts(14px,rgba(32,95,224,1),14px);
+                text-decoration:underline;
+            }
+            img{
+                width: 16px;
+                height: 16px;
+                margin-left: 5px;
+            }
+        }
+    }
+    .DemandCreeate-cont-list{
+        padding-top: 30px;
+        padding-left: 26px;
+        .Staff-fox{
+            .ant-form{
+               overflow: hidden;
+               .ant-form-item{
+                   display: flex;
+                   height: 36px;
+                   align-items: center;
+                   margin-bottom: 20px;
+                   float: left;
+                   margin-right: 20px;
+                   width: auto;
+                   &:first-child,&:last-child{
+                       width: 100%;
+                   }
+                   .ant-form-item-label{
+                       flex:initial;
+                       width: 80px;
+                       height: 36px;
+                       @include txts(14px,rgba(38,38,38,1),36px);
+                       & > label{
+                           height: 36px;
+                           @include txts(14px,rgba(38,38,38,1),36px);
+                           display: block;
+                       }
+                   }
+                   .ant-form-item-control{
+                       @include wh(300px,36px);
+                       border-radius:2px;
+                       max-width: 300px;
+                       .ant-form-item-control-input{
+                           height: 36px;
+                           font-size: 36px;
+                           min-height: 36px;
+                       }
+                       .ant-form-item-explain{
+                           height: 20px;
+                           line-height: 20px;
+                           min-height: 20px;
+                       }
+                       .ant-select{
+                           display: block;
+                           .ant-select-selector{
+                               height: 36px;
+                               padding: 0 8px;
+                               .ant-select-selection-placeholder,.ant-select-selection-item{
+                                   line-height: 22px;
+                                   font-size: 14px;
+                               }
+                           }
+                           .ant-select-clear,.ant-select-arrow{
+                               font-size: 14px;
+                           }
+                           .ant-select-arrow{
+                               @include wh(17px,10px);
+                               top: 50%;
+                               right: 8px;
+                               margin-top: -5px;
+                           }
+                           .ant-select-clear{
+                               @include wh(16px,16px);
+                               top: 50%;
+                               right: 8px;
+                               margin-top: -8px;
+                           }
+                       }
+                       input{
+                           height: 36px;
+                           font-size: 14px;
+                           display: block;
+                       }
+                       button{
+                           width: auto !important;
+                           @include whb(auto,36px,rgba(70,98,240,1));
+                           border-radius:2px;
+                       }
+                   }
+           
+                   
+               }
+           }
+           }
+    }
+   
+  
+}
+
+}
+.history-fax-box{
+    .history-tit-fax{
+        @include wh(100%,50px);
+        border-bottom:1px solid rgba(229, 229, 229, 1);
+        box-sizing: border-box;
+        .tit-name{
+            @include txts(20px,rgba(51,51,51,1),48px);
+        }
+        a{
+            @include txts(16px,rgba(32,95,224,1),48px);
+            margin-right: 50px;
+        }
+    }
+    .history-list-fax{
+        ul{
+            li{
+                height:24px;
+                line-height: 24px;
+                text-align: left;
+                display: flex;
+                width: 100%;
+               i{
+                   @include txts(14px,rgb(8, 69, 190),24px);
+               } 
+               span{
+                   @include txts(14px,rgba(38, 38, 38, 1),24px);
+
+               }
+            }
+        }
+    }
+}

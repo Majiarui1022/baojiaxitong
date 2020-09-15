@@ -1,0 +1,72 @@
+@import "../../styles/public.scss";
+
+.index-aside{
+    @include wh;
+    position: relative;
+    padding-top: 20px;
+    box-sizing: border-box;
+    .logo{
+        margin:0 auto 50px;
+        img{
+            width:45px;
+            height:9px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .aside-list{
+        width: 100%;
+        ul{
+            width: 100%;
+            margin: 0;
+            li{
+                @include whb(60px,60px,transparent);
+                box-shadow:2px 0px 6px 0px rgba(31,121,231,0.16);
+                transition: background .3s;
+                position: relative;
+                cursor: pointer;
+                a{
+                    display: block;
+                    &.active{
+                        background: rgba(31, 95, 225, 1);
+                    }
+                    &:hover{
+                        +.list-tit-name{
+                            opacity: 1;
+                            z-index: 5;
+                        }
+                    }
+                }
+                img{
+                    width:100%;
+                    height:100%;
+                    margin: 0 auto;
+                    display: block;
+                }
+                .list-tit-name{
+                    position: absolute;
+                    @include whb(84px,40px,rgba(0,0,0,0.5));
+                    box-shadow:2px 0px 6px 0px rgba(31,121,231,0.16);
+                    border-radius:6px; 
+                    right: -88px;
+                    top: 10px;
+                    text-align: center;
+                    opacity: 0;
+                    transition: opacity .3s;
+                    z-index: -5;
+                    span{
+                        @include txts(15px,rgba(255,255,255,1),40px);
+                    }
+                }
+              
+            }
+        }
+    }
+    .clear-login-fax{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        cursor: pointer;
+    }
+}
+

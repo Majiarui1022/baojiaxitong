@@ -1,0 +1,15 @@
+@import '../../../styles/public.scss'; 
+
+.DemandSetting-fat{
+    width:100%;
+    height: calc(100% - 50px);
+    overflow: hidden;
+    padding:10px;
+    box-sizing: border-box;
+    .DemandSetting-box-fat{
+        @include whb(100%,100%,#FFFFFF);
+        padding: 0 14px;
+        box-sizing: border-box;
+        
+    }
+}

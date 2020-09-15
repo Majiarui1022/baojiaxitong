@@ -1,0 +1,10 @@
+@import "../../../../styles/public.scss";
+
+
+
+.Product-box-pad{
+    @include wh(100%,100%,hidden);
+    .Product-tab-list-box{
+        @include wh(100%,100%,auto);
+    }
+}

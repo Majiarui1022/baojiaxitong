@@ -1,0 +1,9 @@
+@import '../../../styles/public.scss';
+
+.InventortMyList-falt-fox{
+    width:100%;
+    height: calc(100% - 50px);
+    overflow: hidden;
+    padding: 10px;
+    box-sizing: border-box;
+}

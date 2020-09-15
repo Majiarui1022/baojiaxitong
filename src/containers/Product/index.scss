@@ -1,0 +1,12 @@
+
+@import '../../styles/public.scss';
+
+
+
+
+.Product-fat-box{
+    @include wh;
+    .Product-tit-header{
+        @include whb(100%,50px,#ffffff);
+    }
+}

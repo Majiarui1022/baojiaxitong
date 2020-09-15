@@ -1,0 +1,34 @@
+@import '../../styles/public.scss';
+
+.history-fax-box{
+    .history-tit-fax{
+        @include wh(100%,50px);
+        border-bottom:1px solid rgba(229, 229, 229, 1);
+        box-sizing: border-box;
+        .tit-name{
+            @include txts(20px,rgba(51,51,51,1),48px);
+        }
+        a{
+            @include txts(16px,rgba(32,95,224,1),48px);
+            margin-right: 50px;
+        }
+    }
+    .history-list-fax{
+        ul{
+            li{
+                height:24px;
+                line-height: 24px;
+                text-align: left;
+                display: flex;
+                width: 100%;
+               i{
+                   @include txts(14px,rgb(8, 69, 190),24px);
+               } 
+               span{
+                   @include txts(14px,rgba(38, 38, 38, 1),24px);
+
+               }
+            }
+        }
+    }
+}

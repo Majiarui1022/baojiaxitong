@@ -1,0 +1,9 @@
+@import "../../styles/public.scss";
+
+
+.Inventory-fat-box{
+    @include wh;
+    .Product-tit-header{
+        @include whb(100%,50px,#ffffff);
+    }
+}

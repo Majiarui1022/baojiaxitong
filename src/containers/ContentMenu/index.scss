@@ -1,0 +1,29 @@
+@import "../../styles/public.scss";
+
+
+.index-content-fat{
+    @include wh(100% ,100%);
+    min-width: 1366px;
+    .cont-fixed-box{
+        @include wh(1366px,768px);
+        min-width: 1366px;
+        margin: 0 auto;
+    }
+    .cont-pad-position{
+        @include wh(1366px,768px);
+        margin: 0 auto;
+        .cont-aside{
+            @include whb(60px,100%,rgba(57,65,87,1));
+            box-shadow:2px 0px 6px 0px rgba(31,121,231,0.26);
+        }
+        .cont-section{
+            @include whb(calc(100% - 60px),100%,rgba(241, 241, 241, 1));
+            .cont-menu-fax{
+                @include whb(100%,calc(100% - 52px),rgba(241, 241, 241, 1));
+                margin-top:2px;
+            }
+        }
+    }
+}
+
+

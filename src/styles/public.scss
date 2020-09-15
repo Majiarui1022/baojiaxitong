@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@mixin wh($wid : 100%,$hei : 100%,$hid : visible){
+    @if $wid {
+        width: $wid;
+    }
+    @if $hei {
+        height: $hei;
+    }
+    @if $hid{
+        overflow: $hid;
+    }
+}
+
+
+// 设置高度与行高一致
+@mixin lineH($index){
+    height: $index;
+    line-height: $index;
+}
+
+// 文本样式
+@mixin txts($fs,$cl,$lh){
+        font-size: $fs;
+        color: $cl;
+        @if $lh{
+            line-height: $lh;
+        }
+}
+
+// 设置宽高背景色
+@mixin whb($wid,$hei,$bac){
+    width: $wid;
+    height: $hei;
+    background : $bac;
+}

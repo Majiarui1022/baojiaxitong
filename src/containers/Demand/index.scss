@@ -1,0 +1,8 @@
+@import "../../styles/public.scss";
+
+.Demand-fat-box{
+    @include wh;
+    .Demand-tit-header{
+        @include whb(100%,50px,#ffffff);
+    }
+}

@@ -10,8 +10,8 @@ export default class UserLogin extends Component {
     state = {
         userErr :'',
         passErr :'',
-        username :'',
-        password : '',
+        username :'hllyzms',
+        password : 'asd123456',
     }
     userLogin = () =>{
 

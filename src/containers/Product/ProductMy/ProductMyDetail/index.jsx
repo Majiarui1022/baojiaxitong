@@ -4,6 +4,7 @@ import History from '../../../../components/History'
 import ProductDetailSee from '../../../../components/ProductDetailSee'
 import ProductMyDetailTab from '../ProductMyDetailTab'
 import creatHistory from 'history/createHashHistory'  //返回上一页这段代码
+import DemandModel from '../../../Demand/DemandModel'
 const history = creatHistory();//返回上一页这段代码
 export default class ProductMyDetail extends Component {
     state = {
@@ -109,7 +110,7 @@ export default class ProductMyDetail extends Component {
                             </div>
                         </div>
                         <div className="DemandCreeate-cont-list">
-                            <Demo />
+                                <DemandModel datailCategory={true} disSta={true}/>
                             {
                                 this.state.butStatus.status 
                                     ? 

@@ -4,6 +4,7 @@ import { MinusCircleOutlined } from '@ant-design/icons';
 import './index.scss'
 import History from '../../../../components/History'
 import creatHistory from 'history/createHashHistory'  //返回上一页这段代码
+import DemandModel from '../../../Demand/DemandModel'
 const history = creatHistory();//返回上一页这段代码
 
 const { Option } = Select;
@@ -486,7 +487,7 @@ export default class ProductFatDetail extends Component {
                   </Button>
             <Button type="primary" onClick={this.shoCloseProduct}>
               关闭
-                  </Button>
+            </Button>
           </Form.Item>
         </Form>
       );
@@ -502,8 +503,22 @@ export default class ProductFatDetail extends Component {
             </div>
           </div>
           <div className="DemandCreeate-cont-list">
-            <Demo />
 
+            <DemandModel datailCategory={true} disSta={true}/>
+            <Form>
+              <Form.Item {...tailLayout}>
+                <Button type="primary" onClick={this.showModal}>
+                  分配
+                      </Button>
+                <Button type="primary" onClick={this.showProductTui}>
+                  退回
+                      </Button>
+                <Button type="primary" onClick={this.shoCloseProduct}>
+                  关闭
+                </Button>
+              </Form.Item>
+            </Form>
+            {/* <Demo /> */}
             <History quire={{status:true,id:this.props.match.params.id}} historylist={this.state.historylist}></History>
 
 

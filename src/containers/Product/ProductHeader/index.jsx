@@ -20,20 +20,44 @@ export default class ProductHeader extends Component {
                             
                         </li>
                         <li className="tab-name lf">
-                        <NavLink 
+                            <NavLink 
                                 className="tab-info" 
                                 activeClassName="active" 
                                 to="/menu/product/ProductFat">
-                                <span>未指派项目</span>
-                        </NavLink>
+                                <span>分配</span>
+                            </NavLink>
                         </li>
                         <li className="tab-name lf">
-                        <NavLink 
+                            <NavLink 
                                 className="tab-info" 
                                 activeClassName="active" 
                                 to="/menu/product/ProductRespon">
-                                <span>负责项目</span>
-                        </NavLink>
+                                <span>清单</span>
+                            </NavLink>
+                        </li>
+                        <li className="tab-name lf">
+                            <NavLink 
+                                className="tab-info" 
+                                activeClassName="active" 
+                                to="/menu/product/ProductRespon">
+                                <span>基础报价</span>
+                            </NavLink>
+                        </li>
+                        <li className="tab-name lf">
+                            <NavLink 
+                                className="tab-info" 
+                                activeClassName="active" 
+                                to="/menu/product/ProductRespon">
+                                <span>子项目审核</span>
+                            </NavLink>
+                        </li>
+                        <li className="tab-name lf">
+                            <NavLink 
+                                className="tab-info" 
+                                activeClassName="active" 
+                                to="/menu/product/ProductRespon">
+                                <span>基础报价审核</span>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>

@@ -12,7 +12,7 @@ export default class DemandCreate extends Component {
         return (
             <div className="DemandCreate-box-pad">
                 <div className="DemandCreate-box-fat">
-                    <DemandModel></DemandModel>
+                    <DemandModel datailCategory={false} disSta={false}></DemandModel>
                 </div>
             </div>
         )
